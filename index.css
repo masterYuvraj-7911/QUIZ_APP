@@ -22,19 +22,19 @@ main img{
     max-width: 90vw;
     margin-bottom: 20px;
 }
-main button{
-   background: #35BD3A;
-   color: white;
-   width: 300px;
-   aspect-ratio: 4/1;
-   max-width: 40vw;
-   font-weight: 700;
-   font-size: 32px;
-   border: none;
-   border-radius: 8px;
-   font-size: clamp(12px, 5vw, 28px);
+main button {
+    background: #15803D;
+    color: white;
+    width: 300px;
+    aspect-ratio: 4/1;
+    max-width: 40vw;
+    font-weight: 700;
+    font-size: clamp(12px, 5vw, 28px);
+    border: none;
+    border-radius: 8px;
 }
-main .btn-container{
+
+main .btn-container {
     padding: 0px 10px 10px 0;
     background: #01AB08;
     border-radius: 8px;
@@ -42,6 +42,6 @@ main .btn-container{
     margin-bottom: 80px;
 }
 
-main .btn-container:hover{
+main .btn-container:hover {
     transform: scale(105%);
 }
