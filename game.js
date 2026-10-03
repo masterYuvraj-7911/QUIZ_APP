@@ -60,4 +60,5 @@ function clickCorrect() {
 	optionsElem.forEach((el) => el.textContent === CORRECT_OPTION && el.classList.add("correct"));
 }
 
-document.querySelector("iframe")?.innerHTML = "";
+
+document.querySelector("iframe")?.remove();
