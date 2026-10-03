@@ -48,6 +48,8 @@ const timerId = setInterval(() => {
 	if (time === 10) document.body.style.backgroundColor = "#DBADAD";
 	if (time === 0) {
 		document.body.style.backgroundColor = "#9ce8ff";
+		localStorage.setItem("game-info", JSON.stringify({ ...gameInfo, played: ++gameInfo.played }));
+		nextBtn.disabled = false;
 		clearInterval(timerId);
 		clickCorrect();
 	}
