@@ -14,7 +14,7 @@ root.innerHTML = `
 <img src="./images/banner.png" />
 <img src="./images/volumeUp.png" style="height: 50%;"/>
 </header>
-<div class="qn-container"><div class="qn-no">${CURRENT_QUESTION_NO}/25</div></div>
+<div class="qn-container"><div class="qn-no">${CURRENT_QUESTION_NO}/20</div></div>
 <div class="question">${QUESTION.title}</div>
 <div class="timer-container"><div class="timer">00:30</div></div>
 <div class="options-container">${QUESTION.options.map((e) => `<div class="option">${e}</div>`).join("")}</div>
