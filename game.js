@@ -11,8 +11,8 @@ if (gameInfo.played === gameInfo.total) location.href = "/result.html";
 
 root.innerHTML = `
 <header>
-<img src="./images/banner.png" />
-<img src="./images/volumeUp.png" style="height: 50%;"/>
+<img src="./images/banner.webp" />
+<img src="./images/volumeUp.webp" style="height: 50%;"/>
 </header>
 <div class="qn-container"><div class="qn-no">${CURRENT_QUESTION_NO}/20</div></div>
 <div class="question">${QUESTION.title}</div>
