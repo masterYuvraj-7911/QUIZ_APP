@@ -17,7 +17,7 @@ body{
     background: #CCE2C2;
 }
 main{
-    height: 100vh;
+    height: 100dvh;
     max-width: 600px;
     margin: auto;
     padding-top: 20px;
