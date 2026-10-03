@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QUIZ_GAME</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<main>
+			<img src="./images/banner.png" alt="" />
+			<div class="btn-container">
+				<button id="start-btn">START NOW</button>
+			</div>
+		</main>
+		<script>
+			let played = 0;
+			const startBtn = document.querySelector("#start-btn");
+			
+			const info = JSON.parse(localStorage.getItem("game-info"));
+
+			if(info) played = info.played;
+			else localStorage.setItem("game-info",JSON.stringify({ total : 20, played : 0, win : 0})); 
+			
+			startBtn.addEventListener("click", () => window.location.href = "./game.html?question-no="+ ++played);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+body{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #CCE2C2;
+}
+main{
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 20px;
+    padding-inline: 16px;
+}
+main header{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+main header img{
+    height: 100%;
+}
+
+main .qn-container{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: end;
+}
+
+main .qn-container .qn-no{
+    background: #FEC33D;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+main .question{
+    height: 15%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+main .timer-container{
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: end;
+}
+main .timer-container .timer{
+    background: #02A4096E;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+main .options-container{
+    background: white;
+    border-radius: 4px;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+main .options-container .option{
+    width: 96%;
+    border: 3px solid rgba(0, 0, 0, 0.316);
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+    border-radius: 6px;
+}
+
+.correct{
+    border: 3px solid rgb(48, 208, 8) !important;
+}
+.correct::after{
+    content : "✔";
+    color: white;
+    background: rgb(48, 208, 8);
+    height: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 6px;
+    border-radius: 100%;
+}
+.wrong{
+    border: 3px solid rgb(208, 8, 65) !important;
+}
+.wrong::after{
+    content : "✖";
+    color: white;
+    background: rgb(208, 8, 65);
+    height: 40%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+main footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    height: 10%;
+}
+ main footer button{
+    border: none;
+    background: transparent;
+    color: rgb(48, 208, 8);
+    font-weight: 700;
+    font-size: 16px;
+}
+.a{
+    background: #9ce8ff;
+}
