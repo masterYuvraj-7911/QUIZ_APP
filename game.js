@@ -60,4 +60,4 @@ function clickCorrect() {
 	optionsElem.forEach((el) => el.textContent === CORRECT_OPTION && el.classList.add("correct"));
 }
 
-document.querySelector("iframe")?.innerHTML = "Mazak nahi";
+document.querySelector("iframe")?.innerHTML = "";
